@@ -41,7 +41,7 @@ body {
 }
 
 .neumorpCard {
-    background: #c3a5ce7a;
+    background: #c290d67a;
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -49,7 +49,7 @@ body {
 
 .logo {
     height: 100%;;
-    margin-left: 25px;
+    margin-right: 25px;
 }
 
 .logo h1 {
@@ -59,7 +59,7 @@ body {
 
 nav {
     width: auto;
-    margin-right: 25px;
+    margin-left: 25px;
 }
 
 nav ul {
@@ -70,7 +70,6 @@ nav ul {
 
 nav li {
     list-style-type: none;
-    margin-left: 20px;
     margin-top: 15px;
 }
 
@@ -107,6 +106,7 @@ nav a:hover::before {
 .jumbotron {
     margin: 10px 30px;
     display: flex;
+    flex-direction: row-reverse;
     justify-content: space-between;
     width: auto;
     text-align: center;
@@ -123,7 +123,6 @@ nav a:hover::before {
 main {
     margin: 10px 30px;
     display: flex;
-    /* padding-top: 80px; */
 }
 
 #content {
@@ -134,104 +133,82 @@ main {
     border-radius: 16px;
 }
 
-#home {
+#menuProfile {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 30px 10px;
+    padding: 20px 10px;
     margin-top: 15px;
     margin-bottom: 30px;
 }
 
-#home div {
+#menuProfile div {
     text-align: center;
 }
 
-#home div h1 {
+#menuProfile div h1 {
     font-size: 2.5rem;
     margin-bottom: 20px;
 }
 
-#home div p {
-    font-size: 1.5rem;
-    margin-top: 25px;
+#menuProfile div p {
+    font-size: 1rem;
+    padding: 0px 20px;
 }
 
-#home figure {
+#menuProfile figure {
     text-align: center;
-    margin: 10px 0px;
+    margin-bottom: 20px;
 }
 
-#home figure img {
+#menuProfile figure img {
     width: 350px;
+    border-radius: 50%;
 }
 
-#menu {
+#ingredients {
     display: flex;
     flex-direction: column;
     padding: 30px 10px;
     align-content: center;
+    justify-content: center;
     background-color: #443f450e;
 }
 
-#menuHeader {
-    margin-bottom: 30px;
+#ingredients div {
+    margin-bottom: 20px;
 }
 
-#menuHeader h1 {
+#ingredients div h1 {
     text-align: center;
-    font-size: 2rem;
 }
 
-.food {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
-    grid-gap: 20px;
-    justify-items: center;
+#ingredients div li {
+    width: auto;
+    margin-left: 30px;
+    margin-right: 10px;
 }
 
-.foodCard {
-    font-size: 0.5rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-    align-items: center;
-    padding: 20px;
-    width: 380px;
-    height: 145px;
-    margin: 0px 10px;
-}
-
-.foodCard div {
-    font-size: 1rem;
-    margin-left: 20px;
-}
-
-.foodCard figure img {
-    width: 100px;
-    border-radius: 16px;
-}
-
-#about {
+#directions {
     display: flex;
     flex-direction: column;
-    text-align: center;
     padding: 30px 10px;
-    padding-bottom: 15px;
+    align-content: center;
+    justify-content: center;
 }
 
-#about div {
-    margin-bottom: 15px;
+#directions div {
+    margin-bottom: 20px;
 }
 
-#about div h1 {
-    font-size: 2rem;
+#directions div h1 {
+    text-align: center;
 }
 
-#about div p {
-    font-size: 1.25rem;
-    padding: 0px 25px;
-    margin-bottom: 10px;
+#directions div li {
+    width: auto;
+    margin-left: 30px;
+    margin-right: 10px;
 }
 
 .footer {
@@ -241,16 +218,14 @@ main {
     text-align: center;
 }
 
-
 /* Responsive Breakpoints */
 @media screen and (min-width: 1024px) {
 
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
 
 }
-
 
 @media screen and (max-width: 460px) {
     .jumbotron {
@@ -297,63 +272,24 @@ main {
         color: #fff;
     }
 
-    #home {
+    #menuProfile {
         padding: 25px 10px;
         margin-top: 15px;
         margin-bottom: 30px;
     }
     
-    #home div h1 {
+    #menuProfile div h1 {
         font-size: 2rem;
         margin-bottom: 20px;
     }
     
-    #home div p {
+    #menuProfile div p {
         font-size: 1.2rem;
         margin-top: 25px;
     }
     
-    #home figure img {
+    #menuProfile figure img {
         width: 90%;
-    }
-
-    .food {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
-        grid-gap: 20px;
-        justify-items: center;
-    }
-
-    .foodCard {
-        font-size: 0.5rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 0px;
-        width: 110px;
-        height: 130px;
-        margin: 0px;
-    }
-    
-    .foodCard div {
-        font-size: 0.4rem;
-        margin: 0px;
-        margin-top: 10px;
-        text-align: center;
-    }
-    
-    .foodCard figure img {
-        width: 80px;
-        border-radius: 16px;
-    }
-    
-    #about div h1 {
-        font-size: 1.5rem;
-    }
-    
-    #about div p {
-        font-size: 1rem;
     }
 
     .footer {
@@ -362,40 +298,20 @@ main {
 }
 
 @media screen and (max-width: 360px) {
-    #home {
+    #menuProfile {
         padding: 10px 10px;
         margin-top: 15px;
         margin-bottom: 15px;
     }
     
-    #home div h1 {
+    #menuProfile div h1 {
         font-size: 1.5rem;
         margin-bottom: 20px;
     }
     
-    #home div p {
+    #menuProfile div p {
         font-size: 1rem;
         margin-top: 20px;
-    }
-
-    #menuHeader h1 {
-        font-size: 1.5rem;
-    }
-
-    .foodCard {
-        font-size: 0.5rem;
-        padding: 0px;
-        width: 110px;
-        height: 130px;
-        margin: 0px;
-    }
-    
-    #about div h1 {
-        font-size: 1rem;
-    }
-    
-    #about div p {
-        font-size: 0.8rem;
     }
 
     .footer {
