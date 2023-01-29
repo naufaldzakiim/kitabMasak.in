@@ -219,13 +219,209 @@ main {
 }
 
 /* Responsive Breakpoints */
+@media screen and (min-width: 768px) {
+    #menuProfile {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 20px 10px;
+        margin-top: 15px;
+        margin-bottom: 30px;
+    }
+    
+    #menuProfile div {
+        text-align: center;
+    }
+    
+    #menuProfile div h1 {
+        font-size: 3.5rem;
+        margin-bottom: 20px;
+    }
+    
+    #menuProfile div p {
+        font-size: 1.3rem;
+        padding: 10px 100px;
+    }
+    
+    #menuProfile figure {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    #menuProfile figure img {
+        width: 350px;
+        border-radius: 50%;
+    }
+
+    #ingredients {
+        display: flex;
+        flex-direction: column;
+        padding: 30px 10px;
+        align-content: center;
+        justify-content: center;
+        background-color: #443f450e;
+    }
+    
+    #ingredients div {
+        margin-bottom: 20px;
+    }
+    
+    #ingredients div h1 {
+        text-align: center;
+        font-size: 2rem;
+    }
+    
+    #ingredients div li {
+        width: auto;
+        margin-left: 50px;
+        margin-right: 10px;
+        font-size: 1.2rem;
+    }
+    
+    #directions {
+        display: flex;
+        flex-direction: column;
+        padding: 30px 10px;
+        align-content: center;
+        justify-content: center;
+    }
+    
+    #directions div {
+        margin-bottom: 20px;
+    }
+    
+    #directions div h1 {
+        text-align: center;
+        font-size: 2rem;
+    }
+    
+    #directions div li {
+        width: auto;
+        margin-left: 50px;
+        margin-right: 10px;
+        font-size: 1.2rem;
+    }
+}
+
+
 @media screen and (min-width: 1024px) {
+    .logo {
+        height: 100%;;
+        margin-right: 25px;
+    }
+    
+    .logo h1 {
+        font-size: 2rem;
+        margin: 10px 0px;
+    }
+    
+    nav {
+        width: auto;
+        margin-left: 25px;
+    }
+    
+    nav ul {
+        display: flex;
+        justify-content: space-between;
+        height: 100%;
+    }
+    
+    nav li {
+        list-style-type: none;
+        margin-top: 20px;
+    }
+    
+    nav a {
+        text-decoration: none;
+        position: relative;
+        color: #fff;
+        padding-bottom: 4px;
+        font-size: 1.2rem;
+    }
 
+    #menuProfile {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 20px 10px;
+        margin-top: 15px;
+        margin-bottom: 30px;
+    }
+    
+    #menuProfile div {
+        text-align: center;
+    }
+    
+    #menuProfile div h1 {
+        font-size: 4.5rem;
+        margin-bottom: 20px;
+    }
+    
+    #menuProfile div p {
+        font-size: 1.5rem;
+        padding: 10px 100px;
+    }
+    
+    #menuProfile figure {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    #menuProfile figure img {
+        width: 350px;
+        border-radius: 50%;
+    }
+    
+    #ingredients {
+        display: flex;
+        flex-direction: column;
+        padding: 30px 10px;
+        align-content: center;
+        justify-content: center;
+        background-color: #443f450e;
+    }
+    
+    #ingredients div {
+        margin-bottom: 20px;
+    }
+    
+    #ingredients div h1 {
+        text-align: center;
+        font-size: 3rem;
+    }
+    
+    #ingredients div li {
+        width: auto;
+        margin-left: 70px;
+        margin-right: 10px;
+        font-size: 1.5rem;
+    }
+    
+    #directions {
+        display: flex;
+        flex-direction: column;
+        padding: 30px 10px;
+        align-content: center;
+        justify-content: center;
+    }
+    
+    #directions div {
+        margin-bottom: 20px;
+    }
+    
+    #directions div h1 {
+        text-align: center;
+        font-size: 3rem;
+    }
+    
+    #directions div li {
+        width: auto;
+        margin-left: 70px;
+        margin-right: 10px;
+        font-size: 1.5rem;
+    }
 }
 
-@media screen and (max-width: 768px) {
-
-}
 
 @media screen and (max-width: 460px) {
     .jumbotron {

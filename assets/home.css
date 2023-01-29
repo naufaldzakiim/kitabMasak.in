@@ -244,7 +244,80 @@ main {
 
 /* Responsive Breakpoints */
 @media screen and (min-width: 1024px) {
+    .logo {
+        height: 100%;;
+        margin-left: 25px;
+    }
+    
+    .logo h1 {
+        font-size: 2rem;
+        margin: 10px 0px;
+    }
+    
+    nav {
+        width: auto;
+        margin-right: 25px;
+    }
+    
+    nav ul {
+        display: flex;
+        justify-content: space-between;
+        height: 100%;
+    }
+    
+    nav li {
+        list-style-type: none;
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+    
+    nav a {
+        text-decoration: none;
+        position: relative;
+        color: #fff;
+        padding-bottom: 4px;
+        font-size: 1.2rem;
+    }
 
+    .jumbotron {
+        margin: 10px 30px;
+        display: flex;
+        justify-content: space-between;
+        width: auto;
+        text-align: center;
+    }
+    
+    #home {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 30px 10px;
+        margin-top: 15px;
+        margin-bottom: 30px;
+    }
+    
+    #home div {
+        text-align: center;
+    }
+    
+    #home div h1 {
+        font-size: 3.5rem;
+        margin-bottom: 20px;
+    }
+    
+    #home div p {
+        font-size: 2.5rem;
+        margin-top: 25px;
+    }
+    
+    #home figure {
+        text-align: center;
+        margin: 10px 0px;
+    }
+    
+    #home figure img {
+        width: 650px;
+    }
 }
 
 @media screen and (min-width: 768px) {
